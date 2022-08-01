@@ -19,7 +19,7 @@ class MessageValidatorService(IMessageValidatorService):
     @staticmethod
     def __get_schema(schema_to_use: str):
         try:
-            exists_schema = ChooseSchema[schema_to_use]
+            exists_schema = ChooseSchema(schema_to_use)
             return exists_schema
         except Exception as e:
             raise SchemaNotFound(msg=f"Schema {schema_to_use} not exists.")
