@@ -19,7 +19,7 @@ class IaraService(IIaraService):
     schema_validator = SchemaValidatorServiceService
 
     @classmethod
-    async def send_to_persephone(
+    async def send_to_iara(
         cls, topic: str, partition: int, message: dict, schema_name: str
     ) -> Tuple[bool, IaraClientStatus]:
         is_message_sent = False
