@@ -16,3 +16,5 @@ class ChooseSchema(Enum):
     ouro_investe_basic_registration = BaseSchema
     ouro_investe_upgrade_registration = BaseSchema
     bankpro_registration = BaseSchema
+    send_confirmation_email = BaseSchema
+    social_prospect_registration = BaseSchema
