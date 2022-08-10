@@ -1,7 +1,7 @@
 from typing import Tuple
 
 from iara_client.domain.enums.status import IaraClientStatus
-from iara_client.domain.enums.topics import Topics
+from iara_client.domain.enums.topics import IaraTopics
 from iara_client.domain.exceptions import (
     InvalidMessage,
     InvalidSchemaName,
@@ -21,7 +21,7 @@ class IaraService(IIaraService):
 
     @classmethod
     async def send_to_iara(
-        cls, topic: Topics, message: dict, schema_name: str
+        cls, topic: IaraTopics, message: dict, schema_name: str
     ) -> Tuple[bool, IaraClientStatus]:
         is_message_sent = False
         try:

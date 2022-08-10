@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class Topics(Enum):
+class IaraTopics(Enum):
     CAF_CPF_VALIDATION = "jormungandr-iara.onboarding.caf-cpf-validation"
     CAF_SELFIE_VALIDATION = "jormungandr-iara.onboarding.caf-selfie-validation"
     CAF_DOCUMENT_VALIDATION = "jormungandr-iara.onboarding.caf-document-validation"

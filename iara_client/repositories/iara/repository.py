@@ -1,5 +1,5 @@
 from iara_client.core.repositories.iara import IIaraRepository
-from iara_client.domain.enums.topics import Topics
+from iara_client.domain.enums.topics import IaraTopics
 from iara_client.infraestructure.kafka import KafkaInfrastructure
 
 from etria_logger import Gladsheim
@@ -15,7 +15,7 @@ class IaraRepository(IIaraRepository):
     infra = KafkaInfrastructure
 
     @classmethod
-    async def send_to_iara(cls, topic: Topics, message: dict) -> bool:
+    async def send_to_iara(cls, topic: IaraTopics, message: dict) -> bool:
         is_message_sent = True
         record_metadata = None
 
