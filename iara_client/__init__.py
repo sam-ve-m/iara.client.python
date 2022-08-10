@@ -1,3 +1,3 @@
-from iara_client.main import Iara, IaraClientStatus
+from iara_client.main import Iara, IaraClientStatus, IaraTopics
 
-__all__ = ["Iara", "IaraClientStatus"]
+__all__ = ["Iara", "IaraClientStatus", "IaraTopics"]
