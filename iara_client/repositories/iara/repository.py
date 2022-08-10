@@ -1,4 +1,5 @@
 from iara_client.core.repositories.iara import IIaraRepository
+from iara_client.domain.enums.topics import Topics
 from iara_client.infraestructure.kafka import KafkaInfrastructure
 
 from etria_logger import Gladsheim
@@ -14,7 +15,7 @@ class IaraRepository(IIaraRepository):
     infra = KafkaInfrastructure
 
     @classmethod
-    async def send_to_iara(cls, topic: str, partition: int, message: dict) -> bool:
+    async def send_to_iara(cls, topic: Topics, message: dict) -> bool:
         is_message_sent = True
         record_metadata = None
 
@@ -22,7 +23,7 @@ class IaraRepository(IIaraRepository):
             kafka_producer = await cls.infra.get_or_create_producer()
             message = dumps(message, default=Sindri.dict_to_primitive_types)
             record_metadata = await kafka_producer.send_and_wait(
-                topic=topic, partition=partition, value=message
+                topic=topic.value, value=message
             )
 
         except KafkaTimeoutError as err:
