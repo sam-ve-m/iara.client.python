@@ -1,1 +1,1 @@
-from .enum import ChooseSchema
+from .options import SchemaOptions

@@ -3,7 +3,7 @@ from enum import Enum
 from iara_client.domain.schemas.base import BaseSchema
 
 
-class ChooseSchema(Enum):
+class SchemaOptions(Enum):
     caf_cpf_validation = BaseSchema
     caf_selfie_validation = BaseSchema
     caf_document_validation = BaseSchema
@@ -16,5 +16,5 @@ class ChooseSchema(Enum):
     ouro_investe_basic_registration = BaseSchema
     ouro_investe_upgrade_registration = BaseSchema
     bankpro_registration = BaseSchema
-    send_confirmation_email = BaseSchema
+    email_validation = BaseSchema
     social_prospect_registration = BaseSchema
