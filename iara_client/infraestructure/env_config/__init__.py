@@ -14,10 +14,13 @@ def get_config(base_path: str) -> Config:
     path = str(path)
     if os.path.exists(path):
         return Config(RepositoryEnv(path))
-    else:
-        path = os.path.join("/", "app", ".env")
-        path = str(path)
+
+    path = os.path.join("/", "app", ".env")
+    path = str(path)
+    if os.path.exists(path):
         return Config(RepositoryEnv(path))
+
+    return config
 
 
 if SYSTEM == "Linux":
