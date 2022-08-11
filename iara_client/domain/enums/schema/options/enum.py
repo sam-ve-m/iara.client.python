@@ -1,4 +1,4 @@
-from enum import Enum
+from enum import Enum, StrEnum
 
 from iara_client.domain.schemas.base import BaseSchema
 
