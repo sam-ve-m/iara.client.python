@@ -1,5 +1,6 @@
 from typing import Tuple
 
+from iara_client.domain.enums.schema.types import SchemaTypes
 from iara_client.domain.enums.status import IaraClientStatus
 from iara_client.domain.enums.topics import IaraTopics
 from iara_client.domain.exceptions import (
@@ -21,17 +22,15 @@ class IaraService(IIaraService):
 
     @classmethod
     async def send_to_iara(
-        cls, topic: IaraTopics, message: dict, schema_name: str
+        cls, topic: IaraTopics, message: dict, schema_type: SchemaTypes
     ) -> Tuple[bool, IaraClientStatus]:
         is_message_sent = False
         try:
             cls.schema_validator.schema_validator(
-                message=message, schema_name=schema_name
+                message=message, schema_type=schema_type
             )
 
-            is_message_sent = await cls.kafka.send_to_iara(
-                topic=topic, message=message
-            )
+            is_message_sent = await cls.kafka.send_to_iara(topic=topic, message=message)
 
             return is_message_sent, IaraClientStatus.success
 
