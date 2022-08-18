@@ -9,6 +9,7 @@ class IaraTopics(Enum):
     EMAIL_VALIDATION = "jormungandr-iara.onboarding.email-validation"
     DW_DOCUMENT_VALIDATION = "jormungandr-iara.onboarding.dw-document-validation"
     DW_REGISTRATION = "jormungandr-iara.onboarding.dw-registration"
+    DW_ACCOUNT = "jormungandr-iara.onboarding.dw-account"
     DW_UPDATE = "jormungandr-iara.onboarding.dw-update"
     OURO_INVESTE_BASIC_REGISTRATION = (
         "jormungandr-iara.onboarding.ouro-investe-basic-registration"

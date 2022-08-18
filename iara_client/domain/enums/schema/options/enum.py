@@ -13,6 +13,7 @@ class SchemaOptions(Enum):
     dw_registration = BaseSchema
     dw_update = BaseSchema
     dw_document_validation = BaseSchema
+    dw_account = BaseSchema
     ouro_investe_basic_registration = BaseSchema
     ouro_investe_upgrade_registration = BaseSchema
     bankpro_registration = BaseSchema
