@@ -9,6 +9,6 @@ class IIaraService(ABC):
     @classmethod
     @abstractmethod
     async def send_to_iara(
-        cls, topic: IaraTopics, message: dict, schema_name: str
+        cls, topic: IaraTopics, message: dict
     ) -> Tuple[bool, IaraClientStatus]:
         pass

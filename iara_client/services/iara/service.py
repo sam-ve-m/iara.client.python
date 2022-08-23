@@ -22,12 +22,12 @@ class IaraService(IIaraService):
 
     @classmethod
     async def send_to_iara(
-        cls, topic: IaraTopics, message: dict, schema_type: SchemaTypes
+        cls, topic: IaraTopics, message: dict
     ) -> Tuple[bool, IaraClientStatus]:
         is_message_sent = False
         try:
             cls.schema_validator.schema_validator(
-                message=message, schema_type=schema_type
+                message=message, schema_type=SchemaTypes[topic.name]
             )
 
             is_message_sent = await cls.kafka.send_to_iara(topic=topic, message=message)
