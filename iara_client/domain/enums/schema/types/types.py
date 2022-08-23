@@ -10,6 +10,7 @@ class SchemaTypes(Enum):
     SOLUTIONTECH_SYNC_REGISTER = "solutiontech_sync_register"
     DW_REGISTRATION = "dw_registration"
     DW_UPDATE = "dw_update"
+    DW_ACCOUNT = "dw_account"
     DW_DOCUMENT_VALIDATION = "dw_document_validation"
     OURO_INVESTE_BASIC_REGISTRATION = "ouro_investe_basic_registration"
     OURO_INVESTE_UPGRADE_REGISTRATION = "ouro_investe_upgrade_registration"
