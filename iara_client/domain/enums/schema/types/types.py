@@ -3,7 +3,9 @@ from enum import Enum
 
 class SchemaTypes(Enum):
     CAF_CPF_VALIDATION = "caf_cpf_validation"
+    CAF_CPF_VALIDATION_DETAILS = "caf_cpf_validation_details"
     CAF_SELFIE_VALIDATION = "caf_selfie_validation"
+    CAF_SELFIE_VALIDATION_DETAILS = "caf_selfie_validation_details"
     CAF_DOCUMENT_VALIDATION = "caf_document_validation"
     SINACOR_REGISTRATION = "sinacor_registration"
     SINACOR_UPDATE = "sinacor_update"
@@ -13,6 +15,7 @@ class SchemaTypes(Enum):
     DW_ACCOUNT = "dw_account"
     DW_DOCUMENT_VALIDATION = "dw_document_validation"
     OURO_INVESTE_BASIC_REGISTRATION = "ouro_investe_basic_registration"
+    OURO_INVESTE_BASIC_REGISTRATION_DETAILS = "ouro_investe_basic_registration_details"
     OURO_INVESTE_UPGRADE_REGISTRATION = "ouro_investe_upgrade_registration"
     BANKPRO_REGISTRATION = "bankpro_registration"
     EMAIL_VALIDATION = "email_validation"
