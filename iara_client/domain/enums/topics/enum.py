@@ -3,7 +3,9 @@ from enum import Enum
 
 class IaraTopics(Enum):
     CAF_CPF_VALIDATION = "jormungandr-iara.onboarding.caf-cpf-validation"
+    CAF_CPF_VALIDATION_DETAILS = "jormungandr-iara.onboarding.caf-cpf-validation-details"
     CAF_SELFIE_VALIDATION = "jormungandr-iara.onboarding.caf-selfie-validation"
+    CAF_SELFIE_VALIDATION_DETAILS = "jormungandr-iara.onboarding.caf-selfie-validation-details"
     CAF_DOCUMENT_VALIDATION = "jormungandr-iara.onboarding.caf-document-validation"
     SINACOR_REGISTRATION = "jormungandr-iara.onboarding.sinacor-registration"
     SINACOR_UPDATE = "jormungandr-iara.onboarding.sinacor-update"
@@ -16,6 +18,9 @@ class IaraTopics(Enum):
     DW_DOCUMENT_VALIDATION = "jormungandr-iara.onboarding.dw-document-validation"
     OURO_INVESTE_BASIC_REGISTRATION = (
         "jormungandr-iara.onboarding.ouro-investe-basic-registration"
+    )
+    OURO_INVESTE_BASIC_REGISTRATION_DETAILS = (
+        "jormungandr-iara.onboarding.ouro-investe-basic-registration-details"
     )
     OURO_INVESTE_UPGRADE_REGISTRATION = (
         "jormungandr-iara.onboarding.ouro-investe-upgrade-registration"
