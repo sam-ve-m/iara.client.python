@@ -4,6 +4,7 @@ from iara_client.domain.schemas.base import BaseSchema
 
 
 class DeviceInformation(BaseModel):
+    device_id: str
     device_name: str
     device_model: str
     is_emulator: bool
