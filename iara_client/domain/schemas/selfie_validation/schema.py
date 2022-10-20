@@ -25,7 +25,7 @@ class DeviceInformation(BaseModel):
 class SelfieValidationSchema(BaseSchema):
     device_info: DeviceInformation
     device_id: str
-    latitude: int
-    longitude: int
-    precision: int
+    latitude: float
+    longitude: float
+    precision: float
     ip_address: str
