@@ -1,25 +1,31 @@
-from typing import Optional
-
 from pydantic import BaseModel
-
 from iara_client.domain.schemas.base import BaseSchema
 
 
 class DeviceInformation(BaseModel):
-    device_id: Optional[str]
-    device_name: str
-    device_model: str
-    is_emulator: bool
-    device_operating_system_name: str
-    os_sdk_version: str
-    device_is_in_root_mode: bool
-    device_network_interfaces: str
-    public_ip: str
-    access_ip: str
-    latitude: float
-    longitude: float
-    precision: float
+    dt: int
+    cm_fl: bool
+    mp: int
+    cm_num: int
+    p_count: int
+    acc_n: str
+    acc_v: str
+    bd: str
+    hw: str
+    md: str
+    boa: str
+    cpu: str
+    md_name: str
+    p_mem: int
+    nfc: bool
+    bio: bool
+    iim: str
 
 
 class SelfieValidationSchema(BaseSchema):
     device_info: DeviceInformation
+    device_id: str
+    latitude: float
+    longitude: float
+    precision: float
+    ip_address: str
