@@ -23,3 +23,4 @@ class SchemaOptions(Enum):
     BANKPRO_REGISTRATION = BaseSchema
     EMAIL_VALIDATION = BaseSchema
     SOCIAL_PROSPECT_REGISTRATION = BaseSchema
+    SINACOR_UPDATE_LIGA_DASH = BaseSchema
