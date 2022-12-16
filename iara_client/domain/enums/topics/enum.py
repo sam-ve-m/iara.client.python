@@ -28,3 +28,4 @@ class IaraTopics(Enum):
     BANKPRO_REGISTRATION = "jormungandr-iara.onboarding.bankpro-registration"
     EMAIL_VALIDATION = "jormungandr-iara.onboarding.email-validation"
     SOCIAL_PROSPECT_REGISTRATION = "sphinx-iara.onboarding.social-prospect-registration"
+    SINACOR_UPDATE_LIGA_DASH = "mapinguari-iara.onboarding.sinacor-update"

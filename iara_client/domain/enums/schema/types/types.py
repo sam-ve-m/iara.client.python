@@ -20,6 +20,7 @@ class SchemaTypes(Enum):
     BANKPRO_REGISTRATION = "bankpro_registration"
     EMAIL_VALIDATION = "email_validation"
     SOCIAL_PROSPECT_REGISTRATION = "social_prospect_registration"
+    SINACOR_UPDATE_LIGA_DASH = "sinacor_update_liga_dash"
 
     def __str__(self):
         return self.value
