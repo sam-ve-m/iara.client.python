@@ -1,14 +1,14 @@
 from enum import Enum
 
 from iara_client.domain.schemas.base import BaseSchema
-from iara_client.domain.schemas.selfie_validation.schema import SelfieValidationSchema
+from iara_client.domain.schemas.score_validation.schema import ScoreValidationSchema
 
 
 class SchemaOptions(Enum):
     CAF_CPF_VALIDATION = BaseSchema
     CAF_CPF_VALIDATION_DETAILS = BaseSchema
-    CAF_SELFIE_VALIDATION = SelfieValidationSchema
-    CAF_SELFIE_VALIDATION_DETAILS = BaseSchema
+    CAF_SCORE_VALIDATION = ScoreValidationSchema
+    CAF_SCORE_VALIDATION_DETAILS = BaseSchema
     CAF_DOCUMENT_VALIDATION = BaseSchema
     SINACOR_REGISTRATION = BaseSchema
     SINACOR_UPDATE = BaseSchema
