@@ -4,8 +4,8 @@ from enum import Enum
 class IaraTopics(Enum):
     CAF_CPF_VALIDATION = "jormungandr-iara.onboarding.caf-cpf-validation"
     CAF_CPF_VALIDATION_DETAILS = "jormungandr-iara.onboarding.caf-cpf-validation-details"
-    CAF_SELFIE_VALIDATION = "jormungandr-iara.onboarding.caf-selfie-validation"
-    CAF_SELFIE_VALIDATION_DETAILS = "jormungandr-iara.onboarding.caf-selfie-validation-details"
+    CAF_SCORE_VALIDATION = "jormungandr-iara.onboarding.caf-score-validation"
+    CAF_SCORE_VALIDATION_DETAILS = "jormungandr-iara.onboarding.caf-score-validation-details"
     CAF_DOCUMENT_VALIDATION = "jormungandr-iara.onboarding.caf-document-validation"
     SINACOR_REGISTRATION = "jormungandr-iara.onboarding.sinacor-registration"
     SINACOR_UPDATE = "jormungandr-iara.onboarding.sinacor-update"

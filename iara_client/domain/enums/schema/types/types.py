@@ -4,8 +4,8 @@ from enum import Enum
 class SchemaTypes(Enum):
     CAF_CPF_VALIDATION = "caf_cpf_validation"
     CAF_CPF_VALIDATION_DETAILS = "caf_cpf_validation_details"
-    CAF_SELFIE_VALIDATION = "caf_selfie_validation"
-    CAF_SELFIE_VALIDATION_DETAILS = "caf_selfie_validation_details"
+    CAF_SCORE_VALIDATION = "caf_score_validation"
+    CAF_SCORE_VALIDATION_DETAILS = "caf_score_validation_details"
     CAF_DOCUMENT_VALIDATION = "caf_document_validation"
     SINACOR_REGISTRATION = "sinacor_registration"
     SINACOR_UPDATE = "sinacor_update"

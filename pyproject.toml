@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "iara_client"
-version = "0.9.0"
+version = "0.10.0"
 description = "Iara integrations"
 authors = ["Marco Sievers de Alemida <msa@lionx.com.br>"]
 
