@@ -26,4 +26,4 @@ build-backend = "poetry.core.masonry.api"
 
 [[tool.poetry.source]]
 name = "nexus"
-url = "https://nexus.sigame.com.br/repository/pypi/simple/"
+url = "https://nexus.inf-lionx.com.br/repository/pypi/simple/"
